@@ -1,0 +1,74 @@
+/* ===== HEADER / NAVIGATION ===== */
+.nav-glass {
+  background: rgba(10, 15, 28, 0.85);
+  backdrop-filter: blur(14px);
+  padding: 0.7rem 0;
+  border-bottom: 1px solid rgba(14, 165, 233, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ===== BRAND ===== */
+.brand-text {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+/* ===== NAV LINKS ===== */
+.custom-link {
+  position: relative;
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  margin: 0 0.6rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Glow */
+.custom-link:hover {
+  color: #0ea5e9 !important;
+}
+
+/* Animated underline */
+.custom-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: linear-gradient(90deg, #0ea5e9, #6366f1);
+  transition: width 0.3s ease;
+}
+
+.custom-link:hover::after {
+  width: 100%;
+}
+
+/* ===== BUTTON ===== */
+.btn-gradient {
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+  .nav-link {
+    padding: 0.6rem 0;
+  }
+}

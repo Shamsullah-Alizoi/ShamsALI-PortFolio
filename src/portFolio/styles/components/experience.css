@@ -1,0 +1,152 @@
+:root {
+  --gold: #facc15;
+  --dark: #020617;
+  --card: rgba(15, 23, 42, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --transition: all 0.3s ease;
+}
+
+/* SECTION */
+.experience-section {
+  padding: 100px 0;
+  background: #0b1224;
+}
+
+/* TITLE */
+.section-top {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+  margin-bottom: 1rem ;
+}
+
+.section-title {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin-top: 50px;
+}
+
+/* CENTER LINE */
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: linear-gradient(180deg, #facc15, #38bdf8);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ITEM */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+/* LEFT / RIGHT */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+/* CARD */
+.timeline-content {
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 20px;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+.timeline-content:hover {
+  transform: translateY(-8px);
+  border-color: rgba(250, 204, 21, 0.5);
+}
+
+/* ICON */
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #facc15, #38bdf8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+}
+
+/* POSITION ICON */
+.timeline-item.left .timeline-icon {
+  right: -25px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -25px;
+}
+
+/* TEXT */
+.timeline-year {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  color: var(--gold);
+}
+
+.timeline-content h3 {
+  color: white;
+  font-weight: 700;
+}
+
+.company {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.desc {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline-icon {
+    left: -5px !important;
+  }
+}

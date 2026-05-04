@@ -1,0 +1,178 @@
+/* ===== PROFESSIONAL SKILLS SECTION - SUBTLE HOVER ===== */
+.skills-section {
+  padding: 100px 0;
+background: linear-gradient(135deg, #0b1224, #0a1a2f);
+  position: relative;
+  
+}
+
+
+
+.section-top {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+}
+
+.section-title-light {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Skill Box Styles */
+.skill-box {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 15px 15px;
+  height: 100%;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+/* SUBTLE HOVER EFFECT - Professional & Minimal */
+.skill-box:hover {
+  transform: translateY(-4px);
+  background: rgba(30, 41, 59, 0.8);
+  border-color: rgba(250, 204, 21, 0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Box */
+.icon-box {
+  width: 43px;
+  height: 43px;
+  background: linear-gradient(135deg, #facc15, #eab308);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* SUBTLE HOVER - Icon */
+.skill-box:hover .icon-box {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #facc15, #f59e0b);
+}
+
+/* Title */
+.skill-box h4 {
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+/* SUBTLE HOVER - Title */
+.skill-box:hover h4 {
+  color: #facc15;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+/* SUBTLE HOVER - Subtitle */
+.skill-box:hover .subtitle {
+  color: #cbd5e1;
+}
+
+/* Skill Item */
+.skill-item {
+  margin-bottom: 14px;
+}
+
+.skill-item span {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* SUBTLE HOVER - Text */
+.skill-box:hover .skill-item span {
+  color: #f1f5f9;
+}
+
+/* Progress Bar Background */
+.progress {
+  height: 6px;
+  background: #1e293b;
+  border-radius: 10px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.progress-bar {
+  background: linear-gradient(90deg, #facc15, #f59e0b);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  height: 100%;
+}
+
+/* SUBTLE HOVER - Progress bar */
+.skill-box:hover .progress {
+  height: 6px; /* Keep same height */
+}
+
+.skill-box:hover .progress-bar {
+  background: linear-gradient(90deg, #facc15, #22c55e);
+}
+
+/* Percentage text */
+.skill-item span:last-child {
+  color: #facc15;
+  font-weight: 600;
+}
+
+/* SUBTLE HOVER - Percentage */
+.skill-box:hover .skill-item span:last-child {
+  color: #facc15;
+}
+
+/* Remove the dramatic border animation */
+.skill-box {
+  position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-section {
+    padding: 60px 0;
+  }
+  
+  .section-title-light {
+    font-size: 2rem;
+  }
+  
+  .skill-box {
+    padding: 22px 20px;
+  }
+  
+  .skill-box:hover {
+    transform: translateY(-2px);
+  }
+  
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+  
+  .skill-box h4 {
+    font-size: 1.2rem;
+  }
+}

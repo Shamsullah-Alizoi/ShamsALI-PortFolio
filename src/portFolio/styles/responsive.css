@@ -1,0 +1,164 @@
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Tablet & Mobile Navigation */
+@media (max-width: 992px) {
+  .footer-content-modern {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .footer-brand-modern,
+  .footer-nav-modern,
+  .footer-social-modern {
+    text-align: center;
+    flex: auto;
+    width: 100%;
+  }
+  
+  .footer-nav-title::after,
+  .footer-social-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-tech-stack {
+    justify-content: center;
+  }
+  
+  .footer-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-social-icons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  /* General */
+  .section-title,
+  .section-title-white,
+  .section-title-light {
+    font-size: 2rem !important;
+  }
+  
+  /* About Section */
+  .about-modern {
+    padding: 60px 0;
+  }
+  
+  .about-heading {
+    font-size: 2.5rem;
+  }
+  
+  .info-box {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    padding: 60px 0;
+  }
+  
+  .exp-card {
+    padding: 25px 20px;
+    gap: 18px;
+  }
+  
+  .exp-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+  
+  .exp-title {
+    font-size: 1.2rem;
+  }
+  
+  /* Projects Section */
+  .projects-section {
+    padding: 60px 0;
+  }
+  
+  .project-card {
+    padding: 30px 25px;
+  }
+  
+  /* Learning Section */
+  .learning-section {
+    padding: 60px 0;
+  }
+  
+  .learning-card {
+    padding: 30px 25px;
+  }
+  
+  .learning-title {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .learning-text {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .learning-icon {
+    font-size: 3.5rem;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-card-modern {
+    width: 320px !important;
+    min-width: 280px !important;
+  }
+  
+  /* Footer */
+  .footer-modern {
+    padding: 40px 0 20px;
+  }
+  
+  .footer-name {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .exp-card {
+    padding: 30px 25px;
+  }
+  
+  .learning-card {
+    padding: 40px 35px;
+  }
+  
+  .learning-title {
+    font-size: 1.6rem;
+  }
+  
+  .contact-card-modern {
+    padding: 35px 30px;
+    width: 260px;
+  }
+}
+
+/* Desktop Large */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .footer-content-modern {
+    padding: 0 20px;
+  }
+}

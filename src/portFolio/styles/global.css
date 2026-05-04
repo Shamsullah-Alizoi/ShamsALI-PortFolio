@@ -1,0 +1,38 @@
+/* ===== GLOBAL STYLES - FIX FOR FIXED HEADER ===== */
+
+/* Add padding to body for fixed header */
+body {
+  padding-top: 186rem !important;
+  margin: 0;
+  background: #020617;
+  overflow-x: hidden;
+  
+}
+
+/* Ensure all sections have scroll margin */
+section,
+.hero-section,
+.about-modern,
+.experience-section,
+.skills-section,
+.projects-section,
+.learning-section,
+.contact-section {
+  
+  width: 100vw;
+}
+
+/* Make hero section full height minus header */
+.hero-section {
+  min-height: calc(100vh - 80px);
+}
+
+/* Fix for anchor links */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Ensure content is visible */
+.app-bg {
+  min-height: 100vh;
+}

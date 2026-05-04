@@ -1,0 +1,121 @@
+:root {
+  --gold: #facc15;
+  --dark: #020617;
+  --card: rgba(15, 23, 42, 0.6);
+  --border: rgba(255, 255, 255, 0.1);
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --transition: all 0.3s ease;
+}
+
+/* SECTION */
+.about-modern {
+  padding: 100px 0;
+background: #0b1224;
+  position: relative;
+}
+
+/* LEFT */
+.who-text {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 0.75rem;
+}
+
+.about-heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+/* Gradient name */
+.gradient-text {
+  background: linear-gradient(90deg, #facc15, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 20px 0;
+}
+
+.about-description {
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+.about-description span {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* SKILLS TAGS */
+.skills span {
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.8rem;
+  transition: var(--transition);
+  color: rgb(255, 255, 255);
+  background-color: #00247e2b;
+}
+
+.skills span:hover {
+  background: var(--gold);
+  background-color: rgba(7, 42, 171, 0.326);
+  cursor: pointer;
+}
+
+/* RIGHT GLASS CARD */
+.glass-info-box {
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+/* INFO ITEMS */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  transition: var(--transition);
+}
+
+.info-item:hover {
+  transform: translateX(5px);
+}
+
+.info-item svg {
+  color: var(--gold);
+  font-size: 1.2rem;
+}
+
+.info-item small {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.info-item p {
+  margin: 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2.4rem;
+  }
+}
