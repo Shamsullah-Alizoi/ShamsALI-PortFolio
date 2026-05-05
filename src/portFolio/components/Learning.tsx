@@ -1,5 +1,5 @@
 import React from "react";
-import { FaNodeJs, FaDatabase, FaServer, FaCode } from "react-icons/fa";
+import { FaNodeJs, FaDatabase, FaServer} from "react-icons/fa";
 // import "./Learning.css";
 
 const Learning: React.FC = () => {
