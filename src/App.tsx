@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./portFolio/components/Header";
 import WelcomePage from "./portFolio/components/WelcomePage";
 import AboutMe from "./portFolio/components/AboutMe";
@@ -9,11 +8,6 @@ import Learning from "./portFolio/components/Learning";
 import Contact from "./portFolio/components/Contact";
 import Footer from "./portFolio/components/Footer";
 
-// Import Bootstrap FIRST (before your custom CSS)
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
-// Then import all your custom CSS files individually
 import "./portFolio/styles/variables.css";
 import "./portFolio/styles/global.css";
 import "./portFolio/styles/components/header.css";
