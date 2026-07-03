@@ -50,11 +50,11 @@ const Contact: React.FC = () => {
             </div>
 
             <div className="contact-card">
-              <MdPhone className="icon" />
+              <MdPhone className=" icon" />
               <div>
                 <h4>Phone</h4>
                 <p>+93 77715177</p>
-                <a href="tel:+9377715177">
+                <a href="tel:+93777151177">
                   Call Now <MdArrowForward />
                 </a>
               </div>
