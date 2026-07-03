@@ -61,7 +61,7 @@ const AboutMe: React.FC = () => {
                 <FaEnvelope />
                 <div>
                   <small>EMAIL</small>
-                  <p>alizoishams.com</p>
+                  <p>alizoishams@gmail.com</p>
                 </div>
               </div>
 
