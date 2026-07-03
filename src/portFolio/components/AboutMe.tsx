@@ -53,7 +53,7 @@ const AboutMe: React.FC = () => {
                 <FaBriefcase />
                 <div>
                   <small>CURRENT ROLE</small>
-                  <p>IT Officer — Peace Global Logistics LLC</p>
+                  <p>IT Officer — Peace Global Logistics</p>
                 </div>
               </div>
 
