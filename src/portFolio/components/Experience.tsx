@@ -10,16 +10,16 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       title: "IT Officer",
-      company: "Peace Global Logistics",
-      year: "2023 - 2026",
+      company: "Paywast Logistics LLC",
+      year: "2023 - Current",
       icon: <FaBriefcase />,
       description:
-        "Managing IT infrastructure, providing system support, and ensuring network reliability across business operations.",
+        "Managing IT infrastructure, providing system support, and ensuring network reliability across business operations."
     },
     {
       title: "IT Assistant",
       company: "KIMS Medical Complex",
-      year: "2021 - 2023",
+      year: "2022 - 2023",
       icon: <FaLaptopCode />,
       description:
         "Handled system maintenance, troubleshooting, and supported medical IT systems and networking.",
