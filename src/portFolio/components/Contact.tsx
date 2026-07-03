@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
               <MdPhone className=" icon" />
               <div>
                 <h4>Phone</h4>
-                <p>+93 77715177</p>
+                <p>+93 777151177</p>
                 <a href="tel:+93777151177">
                   Call Now <MdArrowForward />
                 </a>
