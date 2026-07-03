@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       title: "IT Officer",
-      company: "Paywast Logistics LLC",
+      company: "Peace Global Logistics",
       year: "2023 - Current",
       icon: <FaBriefcase />,
       description:
